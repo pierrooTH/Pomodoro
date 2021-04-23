@@ -5,6 +5,9 @@ let stopBtn = document.querySelector('.stop__btn');
 let minutesInterval;
 let secondsInterval;
 
+let link = document.querySelector('.link');
+let description = document.querySelector('.pomodoro__description');
+
 function getMinutesSeconds() {
     document.querySelector('.minutes').innerHTML = minutes;
     document.querySelector('.seconds').innerHTML = seconds;
@@ -48,3 +51,11 @@ stopBtn.addEventListener('click', () => {
     btn.classList.remove('btn__invisible');
     stopBtn.classList.remove('btn__visible');
 })
+
+link.addEventListener("click", () => {
+    if(getComputedStyle(description).display != "none"){
+      description.style.display = "none";
+    } else {
+      description.style.display = "flex";
+    }
+  })
