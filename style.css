@@ -30,7 +30,11 @@ body {
     color: rgb(255, 131, 131);
 }
 .btn {
-    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+.timer__btn{
+    display: block;
 }
 .timer__btn, .stop__btn {
     margin-top: 50px;
@@ -42,12 +46,19 @@ body {
     border-radius: 3px;
 }
 .stop__btn {
-    margin-left: 20px;
+    display: none;
 }
 
 .timer__btn:hover, .stop__btn:hover {
     background-color: rgb(255, 131, 131);
     border: 3px solid rgb(255, 131, 131);
+}
+
+.btn__visible {
+    display: block;
+}
+.btn__invisible {
+    display: none;
 }
 
 @media screen and (max-width: 800px) {
