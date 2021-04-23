@@ -34,18 +34,20 @@ body {
 }
 .timer__btn, .stop__btn {
     margin-top: 50px;
-    border: 1px solid rgb(255, 131, 131);
+    border: 3px solid rgb(255, 131, 131);
     color: white;
-    margin-right: 20px;
-    padding: 10px 20px;
+    padding: 15px 30px;
     font-size: 2rem;
     background-color: rgb(82, 143, 200);
     border-radius: 3px;
 }
+.stop__btn {
+    margin-left: 20px;
+}
 
 .timer__btn:hover, .stop__btn:hover {
     background-color: rgb(255, 131, 131);
-    border: 1px solid rgb(255, 131, 131);
+    border: 3px solid rgb(255, 131, 131);
 }
 
 @media screen and (max-width: 800px) {
